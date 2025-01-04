@@ -2,16 +2,16 @@ const express = require('express');
 
 const bodyParser = require('body-parser');
 
+const adminControllers = require('../controllers/admin');
+
 const addProduct = express.Router();
 
 addProduct.use(bodyParser.urlencoded({ extended: false }));
 
-addProduct.get('/add-product', (req, res, next) => {
-    res.render('add-product', { pageTitle: 'Add-Product Page', path: '/add-product' });
-})
+addProduct.get('/add-product', adminControllers.getAddProduct);
 
-addProduct.post('/add-product', (req, res, next) => {
-    res.redirect('/');
-})
+addProduct.get('/products', adminControllers.getProducts);
+
+addProduct.post('/add-product', adminControllers.postAddProduct);
 
 module.exports = addProduct;
