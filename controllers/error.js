@@ -1,3 +1,3 @@
 exports.useError = (req, res, next) => {
-    res.status(404).render('404', { pageTtile: 'Error Page' });
+    res.status(404).render('404', { pageTitle: 'Error Page', path: '/404' });
 }

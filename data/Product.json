@@ -1,1 +1,9 @@
-[]
+[
+    {
+        "id": "12345",
+        "title": "Car",
+        "imageUrl": "https://img.lovepik.com/photo/48007/1949.jpg_wh300.jpg",
+        "price": "9999",
+        "description": " This is my first Car Image test one"
+    }
+]

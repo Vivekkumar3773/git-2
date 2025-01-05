@@ -8,6 +8,8 @@ products.get('/', shopController.getProducts);
 
 products.get('/index', shopController.getIndex);
 
+products.get('/index/:productId', shopController.getIndexs);
+
 products.get('/cart', shopController.getCart);
 
 products.get('/order', shopController.getOrder);

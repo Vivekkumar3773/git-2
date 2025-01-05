@@ -12,6 +12,12 @@ exports.getIndex = (req, res, next) => {
     })
 }
 
+exports.getIndexs = (req, res, next) => {
+    const prodId = req.params.productId;
+    res.render('shop/index', { pageTitle: 'Cart Page', path: '/index' });
+    res.redirect('/');
+}
+
 exports.getCart = (req, res, next) => {
     res.render('shop/cart', { pageTitle: 'Cart Page', path: '/cart' });
 }
