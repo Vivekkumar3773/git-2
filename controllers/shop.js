@@ -1,4 +1,4 @@
-const Product = require('../model/product');
+const Product = require('../models/product');
 
 exports.getProducts = (req, res, next) => {
     Product.fatchAll((products) => {
